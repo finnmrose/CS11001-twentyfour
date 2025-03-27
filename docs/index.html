@@ -57,20 +57,20 @@
 
       <div class="container my-5">
         <div class="row">
-          <div class="col-12 col-lg-6 offset-0 offset-md-3 text-white text-center mb-5">
+          <div class="col-12 col-lg-6 offset-0 offset-lg-3 text-white text-center mb-5">
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <p>Cras commodo nisl at massa feugiat condimentum. Maecenas at lectus blandit, pretium mi non, tempus eros. Cras sed nulla lorem. Donec vulputate, turpis ut rhoncus pharetra, libero nunc elementum arcu, in efficitur orci metus vel odio. Aliquam molestie molestie ipsum, pretium commodo mi rhoncus vel. Fusce bibendum, odio et accumsan facilisis, turpis felis consequat purus, nec imperdiet urna lorem id leo.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-lg-6 d-flex flex-row flex-shrink-2 justify-content-center"><img src="https://picsum.photos/480/360" alt=""></div>
-          <div class="col-12 col-lg-6 text-white my-auto">
+          <div class="col-12 col-lg-6 text-white my-auto text-lg-left text-center">
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <p>Cras commodo nisl at massa feugiat condimentum. Maecenas at lectus blandit, pretium mi non, tempus eros. Cras sed nulla lorem. Donec vulputate, turpis ut rhoncus pharetra, libero nunc elementum arcu, in efficitur orci metus vel odio. Aliquam molestie molestie ipsum, pretium commodo mi rhoncus vel. Fusce bibendum, odio et accumsan facilisis, turpis felis consequat purus, nec imperdiet urna lorem id leo.</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-6 text-white my-auto">
+          <div class="col-12 col-lg-6 text-white my-auto text-lg-right text-center">
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
             <p>Cras commodo nisl at massa feugiat condimentum. Maecenas at lectus blandit, pretium mi non, tempus eros. Cras sed nulla lorem. Donec vulputate, turpis ut rhoncus pharetra, libero nunc elementum arcu, in efficitur orci metus vel odio. Aliquam molestie molestie ipsum, pretium commodo mi rhoncus vel. Fusce bibendum, odio et accumsan facilisis, turpis felis consequat purus, nec imperdiet urna lorem id leo.</p>
           </div>
@@ -92,7 +92,7 @@
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum <span class="badge rounded-pill text-bg-danger">Sold Out</span></h5>
                 <p class="card-text">In fermentum nulla sem, vitae pretium nisi volutpat vel. Quisque vitae nisi sit amet urna vulputate mollis. Nunc ac dolor eu orci pharetra maximus vitae sed erat.</p>
-                <a href="#" class="btn btn-dark">Order now</a>
+                <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Order now</a>
               </div>
             </div>
           </div>
@@ -108,6 +108,27 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Product sold out</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This product is sold out. Enter your email for updates on when it might return.</p>
+              <form>
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="example@example.com">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-bs-dismiss="modal">Submit email</button>
+            </div>
+          </div>
+        </div>
       
         
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
